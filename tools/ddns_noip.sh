@@ -1,4 +1,5 @@
 #!/bin/bash
+
 hostname="hostname.ddns.net"
 user="usernoip"
 pass="passnoip"
