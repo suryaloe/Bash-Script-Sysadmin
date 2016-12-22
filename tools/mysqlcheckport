@@ -1,0 +1,9 @@
+#!/bin/bash
+port=3306
+command="/etc/init.d/mysql restart"
+if lsof -Pi :$port -sTCP:LISTEN -t >/dev/null ; then
+    echo "Port Open"
+else
+    $command
+fi
+
